@@ -1,0 +1,117 @@
+:root {
+    --cyan : hsl(185, 75%, 39%);
+    --azulOscuro : hsl(229, 23%, 23%);
+    --azulGris : hsl(227, 10%, 46%);
+    --grisOscuro : hsl(0, 0%, 59%);
+    --grisOscuroD : hsla(0, 0%, 59%, 0.301);
+    --blanco : hsl(0, 0%, 100%);
+
+    --size : 1.8rem;
+
+    --fuente : 'Kumbh Sans', san-serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit
+}
+
+body {
+    background-color: var(--cyan);
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+p {
+    margin: 0;
+}
+
+.body-img1 {
+    position: fixed;
+    overflow: hidden;
+    bottom: 50%;
+    right: 50%;
+}
+.body-img2 {
+    position: fixed;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+}
+[class$="__contenedor"] {
+    background-color: var(--blanco);
+    width: 33rem;
+    height: 37.5rem;
+    border-radius: 2rem;
+    overflow: hidden;
+    z-index: 1;
+}
+@media (min-width: 1440px) {
+    [class$="__contenedor"] {
+        width: 35rem;
+    }
+}
+.main__contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main__autor {
+    border-radius: 50%;
+    border: .5rem solid var(--blanco);
+    margin-top: -5rem;
+}
+.main__nombre {
+    color: var(--azulOscuro);
+    font-size: var(--size);
+    font-weight: 700;
+    margin-top: 2rem;
+}
+.main__nombre span {
+    color: var(--azulGris);
+    margin-left: .5rem;
+}
+.main__ciudad {
+    color: var(--grisOscuro);
+    font-weight: 500;
+    margin-top: 1rem;
+}
+.main__numeros {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: .1rem solid var(--grisOscuroD);
+}
+.main__followers, .main__likes, .main__photos {
+    font-size: var(--size);
+    font-weight: 700;
+    color: var(--azulOscuro);
+}
+.main__numeros span {
+    font-size: 1.2rem;
+    letter-spacing: .15rem;
+    font-weight: 500;
+    color: var(--grisOscuro);
+}
+.attribution {
+    position: absolute;
+    bottom: 0;
+    margin: 0rem 2rem 3rem 2rem;
+    text-align: center;
+    color: var(--blanco);
+    font-weight: 700;
+}
+.attribution a {
+    text-decoration: none;
+    color: var(--azulOscuro);
+}
